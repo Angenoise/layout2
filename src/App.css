@@ -1,0 +1,128 @@
+  body {
+    margin: 0;
+    background: rgb(182, 231, 182);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    border: 8px solid rgb(14, 107, 25);
+    height: 100vh;
+    width: 100vw;        
+    box-sizing: border-box;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 8px solid blue;
+    background: lightblue;
+    gap: 10px;
+    flex: 0 0 auto;
+    width: 100%;      
+    box-sizing: border-box;
+    
+  }
+
+  .top-box {
+    flex: 1;
+    height: 90px;
+    background: peachpuff;
+    border: 8px solid salmon;
+    min-width: 0;  
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .top-nested {
+    display: flex;
+    flex: 1;
+    height: 90px;
+    border: 8px solid salmon;
+    background: peachpuff;
+    min-width: 0;
+  }
+
+  .nested-box1 {
+    flex: 1;
+    border: 8px solid red;
+    background: pink;
+    min-width: 0;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+  }
+
+  .nested-box2 {
+    flex: 1;
+    border: 8px solid red;
+    background: pink;
+    min-width: 0;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+  }
+
+  .middle {
+    display: flex;
+    gap: 10px;
+    width: 100%;      
+    box-sizing: border-box;
+  }
+
+  .big-box {
+    flex: 2;
+    height: 270px;
+    background: lightpink;
+    border: 8px solid brown;
+    min-width: 0;
+  }
+
+  .small-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 0;
+  }
+
+  .small-box {
+    flex: 1;
+    background: lightpink;
+    border: 8px solid brown;
+  }
+
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    border: 8px solid blue;
+    background: lightblue;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .bottom-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex: 2;
+    height: 90px;
+    background: lavender;
+    border: 8px solid blueviolet;
+  }
+
+  .bottom-small {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex: 1;
+    height: 90px;
+    background: peachpuff;
+    border: 8px solid salmon;
+    min-width: 0;
+  }
