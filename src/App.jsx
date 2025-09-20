@@ -1,31 +1,74 @@
-import "./App.css";
+import './App.css'
+
+function HeaderContainer() {
+  return <div className="header-container"></div>;
+}
+
+function HeaderContainer2() {
+  return <div className="header-container2">
+    <HeaderContainer2Content name="Mark Angelo"/>
+    <HeaderContainer2Content name="Dela Cruz"/>
+  </div>;
+}
+
+function HeaderContainer2Content(props) {
+  return <div className="header-container2-content">{props.name}</div>;
+}
+
+function Header() {
+  return <div className="header">
+    <HeaderContainer />
+    <HeaderContainer2 />
+    <HeaderContainer />
+  </div>;
+}
+
+function BodyContainer() {
+  return <div className="body-container"></div>;
+}
+
+function BodyContainer2Content() {
+  return <div className="body-container2-content"></div>;
+}
+
+function BodyContainer2() {
+  return <div className="body-container2">
+    <BodyContainer2Content />
+    <BodyContainer2Content />
+  </div>;
+}
+
+function Body() {
+  return <div className="body">
+    <BodyContainer />
+    <BodyContainer2 />
+  </div>;
+}
+
+function FooterContainer1() {
+  return <div className="footer-container1"></div>;
+}
+function FooterContainer2(props) {
+  return <div className="footer-container2">{props.text}</div>;
+}
+
+function Footer() {
+  return <div className="footer">
+    <FooterContainer1 />
+    <FooterContainer2 text="C-PCIT9"/>
+    <FooterContainer2 text="IT3A"/>
+    <FooterContainer1 />
+  </div>;
+}
 
 function App() {
   return (
     <div className="container">
-      <div className="top">
-        <div className="top-box"></div>
-        <div className="top-nested">
-          <div className="nested-box1"></div>
-          <div className="nested-box2"></div>
-        </div>
-        <div className="top-box"></div>
-      </div>
-      <div className="middle">
-        <div className="big-box"></div>
-        <div className="small-column">
-          <div className="small-box"></div>
-          <div className="small-box"></div>
-        </div>
-      </div>
-      <div className="bottom">
-        <div className="bottom-box"></div>
-        <div className="bottom-small"></div>
-        <div className="bottom-small"></div>
-        <div className="bottom-box"></div>
-      </div>
+      <Header name="Mark Angelo"/>
+      <Body />
+      <Footer name="Dela Cruz"/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
